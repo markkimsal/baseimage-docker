@@ -1,3 +1,10 @@
+# Changes for debian buster slim
+
+
+```
+DISABLE_SSH=1 make build BASE_IMAGE=debian:buster-slim NAME=markkimsal/phusion-serverimage:0.11-debian-buster
+```
+
 # A minimal Ubuntu base image modified for Docker-friendliness
 
 [![](https://badge.imagelayers.io/phusion/baseimage:latest.svg)](https://imagelayers.io/?images=phusion/baseimage:latest 'Get your own badge on imagelayers.io')
