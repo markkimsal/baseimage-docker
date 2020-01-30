@@ -1,4 +1,4 @@
-ARG BASE_IMAGE=ubuntu:18.04
+ARG BASE_IMAGE=debian:buster
 FROM $BASE_IMAGE
 MAINTAINER Phusion <info@phusion.nl>
 
@@ -15,6 +15,6 @@ RUN /bd_build/prepare.sh && \
 ENV DEBIAN_FRONTEND="teletype" \
     LANG="en_US.UTF-8" \
     LANGUAGE="en_US:en" \
-    LC_ALL="en_US.UTF-8"
+    LC_ALL="C"
 
 CMD ["/sbin/my_init"]
